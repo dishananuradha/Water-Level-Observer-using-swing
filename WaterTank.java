@@ -9,7 +9,7 @@ class WaterTank extends JFrame{
 
     private WaterTank(){
         setTitle("Water Tank");
-        setSize(200,300);
+        setSize(300,300);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setLayout(new FlowLayout());
