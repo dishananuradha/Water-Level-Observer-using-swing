@@ -8,6 +8,7 @@ class WaterTank extends JFrame{
     private JSlider waterLevelSlider;
 
     private WaterTank(){
+        setTitle("Water Tank");
         setSize(200,300);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
