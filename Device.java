@@ -4,9 +4,8 @@ import java.awt.*;
 class Device extends JFrame{
 
     public Device(){
-		setSize(300,300);
+		setSize(200,100);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		setLocationRelativeTo(null);
 		setLayout(new FlowLayout());
 		setVisible(true);
 	}

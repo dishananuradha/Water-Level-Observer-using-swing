@@ -4,9 +4,13 @@ import java.awt.*;
 class Alarm extends Device{
     private JLabel lblAlarm;
 	
-	public Alarm(){
+	public Alarm(JFrame watertank){
 		lblAlarm=new JLabel("  ");
 		lblAlarm.setFont(new Font("",1,25));
+        int xOffset = 300;
+        int yOffset = 150;
+        Point parentLocation = watertank.getLocation();
+        setLocation(parentLocation.x + xOffset, parentLocation.y + yOffset);
 		add(lblAlarm);
 	}
 
