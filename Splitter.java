@@ -8,7 +8,6 @@ class Splitter extends Device{
 		lblSplitter=new JLabel("  ");
 		lblSplitter.setFont(new Font("",1,25));
 		add(lblSplitter);
-		
 	}
 
 	public void update(int waterLevel){

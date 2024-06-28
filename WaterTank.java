@@ -9,6 +9,9 @@ class WaterTank extends JFrame{
 
     private WaterTank(){
         controlRoom = new ControlRoom();
+        controlRoom.addDevice(new Display());
+        controlRoom.addDevice(new Alarm());
+        controlRoom.addDevice(new Splitter());
         setSize(300,300);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
