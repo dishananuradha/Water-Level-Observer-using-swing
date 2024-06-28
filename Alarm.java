@@ -5,6 +5,7 @@ class Alarm extends Device{
     private JLabel lblAlarm;
 	
 	public Alarm(JFrame watertank){
+        setTitle("Alarm");
 		lblAlarm=new JLabel("  ");
 		lblAlarm.setFont(new Font("",1,25));
         int xOffset = 300;

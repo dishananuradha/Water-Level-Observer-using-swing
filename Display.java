@@ -5,6 +5,7 @@ class Display extends Device{
     private JLabel lblDisplay;
 	
 	public Display(JFrame watertank){
+        setTitle("Display");
 		lblDisplay=new JLabel("  ");
 		lblDisplay.setFont(new Font("",1,25));
         int xOffset = 300;

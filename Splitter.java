@@ -5,6 +5,7 @@ class Splitter extends Device{
     private JLabel lblSplitter;
 	
 	public Splitter(JFrame watertank){
+        setTitle("Splitter");
 		lblSplitter=new JLabel("  ");
 		lblSplitter.setFont(new Font("",1,25));
         int xOffset = 300;
