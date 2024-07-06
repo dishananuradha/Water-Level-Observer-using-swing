@@ -1,10 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
 
-class Splitter extends Device{
+class Splitter extends JFrame implements DeviceInterface{
     private JLabel lblSplitter;
 	
 	public Splitter(JFrame watertank){
+        setSize(300,100);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setLayout(new FlowLayout());
+		setVisible(true);
         setTitle("Splitter");
 		lblSplitter=new JLabel("  ");
 		lblSplitter.setFont(new Font("",1,25));

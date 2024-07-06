@@ -15,9 +15,6 @@ class WaterTank extends JFrame{
 		setLayout(new FlowLayout());
 
         controlRoom = new ControlRoom();
-        controlRoom.addDevice(new Display(this));
-        controlRoom.addDevice(new Alarm(this));
-        controlRoom.addDevice(new Splitter(this));
 
         waterLevelSlider=new JSlider(JSlider.VERTICAL,0,100,50);
 		waterLevelSlider.addChangeListener(new ChangeListener(){
@@ -33,5 +30,9 @@ class WaterTank extends JFrame{
             waterTank=new WaterTank();
         }
         return waterTank;
+    }
+
+    public ControlRoom getControlRoom(){
+        return controlRoom;
     }
 }

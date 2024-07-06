@@ -1,10 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
 
-class Display extends Device{
+class Display extends JFrame implements DeviceInterface{
     private JLabel lblDisplay;
 	
 	public Display(JFrame watertank){
+        setSize(300,100);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setLayout(new FlowLayout());
+		setVisible(true);
         setTitle("Display");
 		lblDisplay=new JLabel("  ");
 		lblDisplay.setFont(new Font("",1,25));

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-class ControlRoom {
-    private ArrayList<Device>deviceList=new ArrayList<>();
+class ControlRoom{
+    private ArrayList<DeviceInterface>deviceList=new ArrayList<>();
 	private int waterLevel;
 
-	public void addDevice(Device device){
+	public void addDevice(DeviceInterface device){
 		deviceList.add(device);
 	}
 
@@ -16,7 +16,7 @@ class ControlRoom {
 	}
 
 	public void notifyDevices(){
-		for(Device device : deviceList){
+		for(DeviceInterface device : deviceList){
 			device.update(waterLevel);
 		}
 	}

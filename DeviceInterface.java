@@ -1,3 +1,5 @@
 interface DeviceInterface{
-    public void update(int waterLevel);
+	public void update(int waterLevel);
 }
+
+  
