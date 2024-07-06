@@ -19,7 +19,7 @@ class WaterTank extends JFrame{
         waterLevelSlider=new JSlider(JSlider.VERTICAL,0,100,50);
 		waterLevelSlider.addChangeListener(new ChangeListener(){
 			public void stateChanged(ChangeEvent evt){
-				controlRoom.setWaterLevel(waterLevelSlider.getValue());
+				controlRoom.updateDevices(waterLevelSlider.getValue());
 			}
 		});
 		add(waterLevelSlider);

@@ -7,7 +7,7 @@ class ControlRoom{
 		deviceList.add(device);
 	}
 
-	public void setWaterLevel(int waterLevel){
+	public void updateDevices(int waterLevel){
         for(DeviceInterface device : deviceList){
 			device.update(waterLevel);
 		}
