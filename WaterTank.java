@@ -8,13 +8,13 @@ class WaterTank extends JFrame{
     private JSlider waterLevelSlider;
 
     private WaterTank(){
+        controlRoom = new ControlRoom();
+        
         setTitle("Water Tank");
         setSize(300,300);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setLayout(new FlowLayout());
-
-        controlRoom = new ControlRoom();
 
         waterLevelSlider=new JSlider(JSlider.VERTICAL,0,100,50);
 		waterLevelSlider.addChangeListener(new ChangeListener(){

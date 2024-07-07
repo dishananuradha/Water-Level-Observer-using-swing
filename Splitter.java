@@ -10,12 +10,13 @@ class Splitter extends JFrame implements DeviceInterface{
 		setLayout(new FlowLayout());
 		setVisible(true);
         setTitle("Splitter");
-		lblSplitter=new JLabel("  ");
-		lblSplitter.setFont(new Font("",1,25));
         int xOffset = 300;
         int yOffset = 300;
         Point parentLocation = watertank.getLocation();
         setLocation(parentLocation.x + xOffset, parentLocation.y + yOffset);
+
+        lblSplitter=new JLabel("  ");
+		lblSplitter.setFont(new Font("",1,25));
 		add(lblSplitter);
 	}
 
