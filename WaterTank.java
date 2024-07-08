@@ -3,13 +3,9 @@ import javax.swing.event.*;
 import java.awt.*;
 
 class WaterTank extends JFrame{
-    private static WaterTank waterTank;
-    private ControlRoom controlRoom;
     private JSlider waterLevelSlider;
 
-    private WaterTank(){
-        controlRoom = new ControlRoom();
-        
+    public WaterTank(ControlRoomInterface controlRoom){
         setTitle("Water Tank");
         setSize(300,300);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -23,16 +19,5 @@ class WaterTank extends JFrame{
 			}
 		});
 		add(waterLevelSlider);
-    }
-
-    public static WaterTank getInstance(){
-        if(waterTank==null){
-            waterTank=new WaterTank();
-        }
-        return waterTank;
-    }
-
-    public ControlRoom getControlRoom(){
-        return controlRoom;
     }
 }
